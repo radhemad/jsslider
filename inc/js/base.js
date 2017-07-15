@@ -5,7 +5,7 @@
 	var Carousel = {
 		props:{
 			current_slide: 0,
-			total_slides: 3
+			total_slides: $('.carousel-cells article').length
 		},
 		init:function(){
 			//ADD INITIALIZER CODE HERE
@@ -59,7 +59,8 @@
 			 total_slides_div[i].style.display = "none";
 			}
 
-			total_slides_div[Carousel.props.current_slide].style.display = "flex";  
+			total_slides_div[Carousel.props.current_slide].style.display = "flex";
+			total_slides_div[Carousel.props.current_slide].className = "selected";
 		}
 	}
 	$(function(){
