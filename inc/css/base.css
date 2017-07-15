@@ -31,6 +31,7 @@ header{
 	background-color:rgba(200,200,200,1);
 	cursor:pointer;
 	margin-top:-25px;
+	z-index: 999;
 }
 
 .page-content .main-carousel .carousel-next{
@@ -97,6 +98,26 @@ header nav li {
 
 .page-content article {
 	background-image: url('../img/slide-background.jpg'); 
+	-webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+.page-content article.selected {
+	position:relative;
+	animation:animateright 1s
+}
+
+@keyframes animateright {
+	from {
+		right:-600px;
+		opacity:0
+	} 
+	to {
+		right:0;
+		opacity:1
+	}
 }
 
 .page-content .slide-text {
