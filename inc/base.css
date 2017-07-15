@@ -1,0 +1,128 @@
+body{
+	background-color:#e2e2e2;
+}
+header{
+	width:100%;
+	position:fixed;
+	height:50px;
+	background-color:#ccc;
+	overflow:hidden;
+	z-index:2;
+	box-sizing:border-box;
+}
+
+.page-content{
+	padding-top:50px;
+}
+
+.page-content .main-carousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	position:relative;
+	z-index:1;
+}
+
+.page-content .main-carousel .carousel-next,
+.page-content .main-carousel .carousel-prev{
+	position:absolute;
+	top:50%;
+	padding:20px;
+	background-color:rgba(200,200,200,1);
+	cursor:pointer;
+	margin-top:-25px;
+}
+
+.page-content .main-carousel .carousel-next{
+	right:0;
+}
+
+.page-content .main-carousel .carousel-prev{
+	left:0;
+}
+
+.page-content .main-carousel .carousel-cells{
+	width:99999px;
+	height:100%;
+
+}
+
+.page-content .main-carousel .carousel-cells article{
+	width:100vw;
+	height:100%;
+	float:left;
+	display:flex;
+}
+
+header nav {
+	float: right;
+}
+
+header h2 {
+	float: left;
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+header nav li {
+	float: left;
+	margin: 10px;
+	background-color: #e2e2e2;
+	padding: 5px 20px;
+}
+
+.page-content .column-content {
+	padding: 20px;
+}
+
+.page-content .column-content h1 {
+	font-size: 28px;
+}
+
+.page-content .three-columns .list-block h3 {
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+.page-content .three-columns li {
+	list-style-type: none;
+	font-size: 16px;
+}
+
+.page-content .list-block {
+	float: left;
+	width: 25%;
+}
+
+.page-content article {
+	background-image: url('../img/slide-background.jpg'); 
+}
+
+.page-content .slide-text {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.page-content .slide-text h1 {
+	font-size: 40px;
+	position: relative;
+	top: 45%;
+}
+
+.page-content .slide-text p {
+	position: relative;
+	top: 45%;
+}
+
+
+@media (max-width: 767px) {
+	.list-block {
+		width: 33%;
+	}
+
+	.list-block:last-child {
+		float: right;
+	}
+
+}
